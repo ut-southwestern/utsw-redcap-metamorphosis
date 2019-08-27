@@ -1,7 +1,8 @@
-MetaMorphosis Clinical Data Conversion Tool 
+<b>MetaMorphosis Clinical Data Conversion Tool </b>
  
  
-Getting Started The MetaMorphosis Clinical Data Conversion Tool External Module allows REDCap Administrators to take a collection of exported patient identifiers from a source system (TriNetX, i2b2, other data warehouse) and convert them into an identified patient cohort in a standard demographics REDCap template. 
+Getting Started 
+The MetaMorphosis Clinical Data Conversion Tool External Module allows REDCap Administrators to take a collection of exported patient identifiers from a source system (TriNetX, i2b2, other data warehouse) and convert them into an identified patient cohort in a standard demographics REDCap template. 
 
 Requirements 
  • REDCap Version 8.10.2 or later • You must be a REDCap Administrator to use this module. The REDCap Administrator will serve as an honest broker of health care data for this module. • This module assumes that a valid IRB-approved protocol is in place.
@@ -12,7 +13,6 @@ Installation
 • Obtain this module from the Consortium [REDCap Repo] (https://redcap.vanderbilt.edu/consortium/modules/index.php) from the control center. 
  
 Configuration 
- 
 1.Enable module on all Projects by default  - As marked in the example, this option does not automatically show as a useable module. If a normal user goes into External Modules, they will not see this  
 2.Make module discoverable – As marked in the example, allows the green Enable a Module to find MetaMorphosis by a REDCap Administrator 
 3.Module configuration permissions in projects –  
@@ -26,5 +26,5 @@ Project	Setup
 4. Go	to the	External Modules	link	in	the	left	navigation	and	select	Metamorphosis	
 5. Go	to the	document field	and	choose	the	file	that	the	user	provided	from	either	TriNetX	or	i2b2	or	other	data	source.		You	may	add	other	data	on	this	screen	for	auditing	purposes.		
 6. Click	Submit.	
-7. The	External	Module	will	go	to	the	data	warehouse	and	grab	identifiable	demographics	and	place	them	as	records	in	the	REDCap	project.	
+7. The External Module will go to the data warehouse and grab identifiable demographics and place them as records in the REDCap project.	
 	

@@ -1,0 +1,97 @@
+{
+	"name": "MetaMorphosis Clinical Data Conversion Tool",
+
+	"namespace": "UTSW\\ClinicalDataConversionTool",
+
+	"description": "The MetaMorphosis Clinical Data Conversion Tool External Module allows REDCap Administrators to take a collection of exported patient identifiers from a source system (TriNetX, i2b2, other data warehouse) and convert them into an identified patient cohort in a standard demographics REDCap template.",
+	
+	"authors": [
+		{
+			"name": "Teresa Bosler",
+			"email": "teresa.bosler@utsouthwestern.edu",
+			"institution": "UT Southwestern Medical Center"
+		}
+	],
+
+	"permissions": [
+	],
+
+	"no-auth-pages": [
+	],
+
+	"links": {
+		"project": [
+			{
+				"name": "MetaMorphosis Clinical Data Conversion Tool",
+				"icon": "wrench",
+				"url": "cdct_converter.php"
+			}
+		],
+		"control-center": [
+		  {
+			"name": "MetaMorphosis Audit Report",
+			"icon": "report",
+			"url": "cdct_report.php"
+		  }
+		]
+	},
+
+	"project-settings": [
+	],
+
+	"system-settings": [
+		{
+			"key": "cdct-config",
+			"name": "<strong>Demographic Conversion DB:</strong><br> Enter Database connection parameters",
+			"type": "descriptive"
+		},
+		{
+		  "key": "cdct-driver",
+		  "name": "DB Driver",
+		  "type": "dropdown",
+		  "required": false,
+		  "choices": [
+			{"value": "oci", "name": "Oracle"},
+			{"value": "sqlsrv", "name": "MSSQL"}
+		  ]
+		},
+		{
+			"key": "cdct-username",
+			"name": "DB Username",
+			"required": true,
+			"type": "text"
+		},
+		{
+			"key": "cdct-password",
+			"name": "DB Password",
+			"required": true,
+			"type": "password"
+		},
+		{
+			"key": "cdct-host",
+			"name": "DB Host",
+			"required": true,
+			"type": "text"
+		},
+		{
+			"key": "cdct-port",
+			"name": "DB port (Enter 1522 for Oracle or 1433 for MSSQL)",
+			"required": true,
+			"type": "text"
+		},
+		{
+			"key": "cdct-sid",
+			"name": "DB SID/Name (Enter SID for Oracle or Database Name for MSSQL)",
+			"required": true,
+			"type": "text"
+		}
+	],
+	
+	"compatibility": {
+		"php-version-min": "5.5.0",
+		"php-version-max": "",
+		"redcap-version-min": "8.10.1",
+		"redcap-version-max": ""
+	}
+    
+}
